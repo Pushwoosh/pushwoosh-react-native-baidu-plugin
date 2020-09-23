@@ -88,15 +88,15 @@ public class PushwooshPlugin extends ReactContextBaseJavaModule implements Lifec
 
 		if (appId == null) {
 			if (error != null) {
-				error.invoke("The Pushwoosh Application id is not specified. Please, " +
-						"use 'pw_appid' parameter to specify the Pushwoosh Application id.");
+				error.invoke("Pushwoosh Application id is not specified. Please, " +
+						"use 'pw_appid' parameter to specify Pushwoosh Application id.");
 			}
 			return;
 		}
 		if (secretKey == null) {
 			if (error != null) {
-				error.invoke("The Baidu secret key is not specified. Please, use " +
-						"'secret_key' parameter to specify the Baidu secret key.");
+				error.invoke("Baidu secret key is not specified. Please, use " +
+						"'secret_key' parameter to specify Baidu secret key.");
 			}
 			return;
 		}
