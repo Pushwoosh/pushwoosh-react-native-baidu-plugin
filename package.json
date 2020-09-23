@@ -1,0 +1,25 @@
+{
+  "name": "pushwoosh-react-native-baidu-plugin",
+  "version": "1.0.0",
+  "description": "This plugin allows you to send and receive push notifications using Baidu. Powered by Pushwoosh (www.pushwoosh.com).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pushwoosh/pushwoosh-react-native-baidu-plugin.git"
+  },
+  "keywords": [
+    "push",
+    "notification",
+    "baidu"
+  ],
+  "author": "Pushwoosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pushwoosh/pushwoosh-react-native-baidu-plugin/issues"
+  },
+  "rnpm": {
+    "android": {
+      "sourceDir": "./src/android"
+    }
+  }
+}
