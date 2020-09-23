@@ -27,7 +27,7 @@ Pushwoosh.register();
 In order to use reverse proxy to connect to pushwoosh servers specify the parameter "reverse_proxy_url" with the url to your reverse proxy when initializing the plugin:
 
 ```js
-import Pushwoosh from 'pushwoosh-react-native-plugin';
+import Pushwoosh from 'pushwoosh-react-native-baidu-plugin';
 
 Pushwoosh.init({ 
     "pw_appid" : "YOUR_PUSHWOOSH_PROJECT_ID" , 
