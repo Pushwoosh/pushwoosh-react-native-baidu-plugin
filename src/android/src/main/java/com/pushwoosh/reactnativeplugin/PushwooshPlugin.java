@@ -84,7 +84,7 @@ public class PushwooshPlugin extends ReactContextBaseJavaModule implements Lifec
 	@ReactMethod
 	public void init(ReadableMap config, Callback success, Callback error) {
 		String appId = config.getString("pw_appid");
-		String secretKey = config.getString("secret_key");
+		String apiKey = config.getString("baidu_api_key");
 
 		if (appId == null) {
 			if (error != null) {
@@ -93,10 +93,10 @@ public class PushwooshPlugin extends ReactContextBaseJavaModule implements Lifec
 			}
 			return;
 		}
-		if (secretKey == null) {
+		if (apiKey == null) {
 			if (error != null) {
-				error.invoke("Baidu secret key is not specified. Please, use " +
-						"'secret_key' parameter to specify Baidu secret key.");
+				error.invoke("The Baidu api key is not specified. Please, use " +
+						"'baidu_api_key' parameter to specify Baidu api key.");
 			}
 			return;
 		}
@@ -109,7 +109,7 @@ public class PushwooshPlugin extends ReactContextBaseJavaModule implements Lifec
 		}
 
 		Pushwoosh.getInstance().setAppId(appId);
-		Pushwoosh.getInstance().setSenderId(secretKey);
+		Pushwoosh.getInstance().setSenderId(apiKey);
 
 		synchronized (sStartPushLock) {
 			if (sReceivedPushData != null) {
