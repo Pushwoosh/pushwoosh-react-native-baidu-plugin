@@ -8,7 +8,7 @@ Example:
 ```js
 var Pushwoosh = require('pushwoosh-react-native-baidu-plugin');
 
-Pushwoosh.init({ "pw_appid" : "PUSHWOOSH_APP_ID" , "secret_key" : "BAIDU_SECRET_KEY" });
+Pushwoosh.init({ "pw_appid" : "PUSHWOOSH_APP_ID" , "baidu_api_key" : "BAIDU_API_KEY" });
 
 Pushwoosh.register(
   (token) => {
@@ -91,7 +91,7 @@ Initializes Pushwoosh module with application id and baidu secret key.
 </tr>
 <tr class="even"><td>object</td><td><b>config</b></td><td>Pushwoosh initialization config.</td></tr>
 <tr class="even"><td>string</td><td><b>config.pw_appid</b></td><td>Pushwoosh application id.</td></tr>
-<tr class="even"><td>string</td><td><b>config.secret_key</b></td><td>Baidu secret key.</td></tr>
+<tr class="even"><td>string</td><td><b>config.baidu_api_key</b></td><td>Baidu API key.</td></tr>
 <tr class="even"><td>function</td><td><b>success</b></td><td>(optional) initialization success callback.</td></tr>
 <tr class="even"><td>function</td><td><b>fail</b></td><td>(optional) initialization failure callback.</td></tr>
 </tbody>
