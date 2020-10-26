@@ -19,7 +19,7 @@ import Pushwoosh from 'pushwoosh-react-native-baidu-plugin';
 
 Pushwoosh.init({ 
     "pw_appid" : "YOUR_PUSHWOOSH_PROJECT_ID" , 
-    "secret_key" : "YOUR_BAIDU_SECRET_KEY" 
+    "baidu_api_key" : "YOUR_BAIDU_API_KEY" 
 });
 Pushwoosh.register();
 ```
@@ -31,7 +31,7 @@ import Pushwoosh from 'pushwoosh-react-native-baidu-plugin';
 
 Pushwoosh.init({ 
     "pw_appid" : "YOUR_PUSHWOOSH_PROJECT_ID" , 
-    "secret_key" : "YOUR_BAIDU_SECRET_KEY",
+    "baidu_api_key" : "YOUR_BAIDU_API_KEY",
     "reverse_proxy_url" : "URL_TO_YOUR_REVERSE_PROXY"
 });
 Pushwoosh.register();
