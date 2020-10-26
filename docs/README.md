@@ -77,7 +77,7 @@ DeviceEventEmitter.addListener('pushOpened', (e: Event) => {
 init(config, success, fail)
 ```
 
-Initializes Pushwoosh module with application id and baidu secret key.
+Initializes Pushwoosh module with application id and Baidu API key.
 
 <table width=100% style='background-color:#0EA7ED;'>
 <colgroup>
